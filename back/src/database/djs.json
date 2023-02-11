@@ -1,0 +1,185 @@
+[
+	{
+		"id": "1",
+		"genero": "house",
+		"djs": [
+			{
+				"Daft Punk": {
+					"cancion mas escuchada": "one more time",
+					"nacionalidad": "París, Francia"
+				}
+			},
+			{
+				"Axwell Λ Ingrosso": {
+					"cancion mas escuchada": "more than you know",
+					"nacionalidad": "suecia"
+				}
+			},
+			{
+				"Calvin Harris": {
+					"cancion mas escuchada": "Summer",
+					"nacionalidad": "Dumfries, Reino Unido"
+				}
+			},
+			{
+				"David Guetta": {
+					"cancion mas escuchada": "titanium",
+					"nacionalidad": "París, Francia"
+				}
+			},
+			{
+				"Swedish House Mafia": {
+					"cancion mas escuchada": "Don't You Worry Child",
+					"nacionalidad": "Estocolmo, Suecia"
+				}
+			},
+			{
+				"Robin Schulz": {
+					"cancion mas escuchada": "Sugar ",
+					"nacionalidad": "Osnabrück, Alemania"
+				}
+			}
+		]
+	},
+	{
+		"id": "2",
+		"genero": "techno",
+		"djs": [
+			{
+				"Carl Cox": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Mánchester, Reino Unido"
+				}
+			},
+			{
+				"Boris Brejcha": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Ludwigshafen am Rhein, Alemania"
+				}
+			},
+			{
+				"Adam Beyer": { "cancion mas escuchada": "", "nacionalidad": "Estocolmo, Suecia" }
+			},
+			{
+				"Amelie Lens": { "cancion mas escuchada": "", "nacionalidad": "Amberes, Bélgica" }
+			},
+			{
+				"Joseph Capriati": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Caserta, Italia"
+				}
+			},
+			{
+				"Charlotte de Witte": {
+					"cancion mas escuchada": "",
+					"nacionalidad": " Gante, Bélgica"
+				}
+			}
+		]
+	},
+	{
+		"id": "3",
+		"genero": "trance",
+		"djs": [
+			{
+				"Armin van Buuren": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Leiden, Países Bajos"
+				}
+			},
+			{ "Tiesto": { "cancion mas escuchada": "", "nacionalidad": "Breda, Países Bajos" } },
+			{
+				"Above & Beyond": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Londres, Reino Unido"
+				}
+			},
+			{
+				"Paul Oakenfold": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Mile End, Londres, Reino Unido"
+				}
+			},
+			{
+				"Paul van Dyk": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Eisenhüttenstadt, Alemania"
+				}
+			},
+			{
+				"ATB (André Tanneberger)": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Freiberg, Alemania"
+				}
+			}
+		]
+	},
+	{
+		"id": "4",
+		"genero": "Dubstep",
+		"djs": [
+			{
+				"Skrillex": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Highland Park, Los Ángeles, California, Estados Unidos"
+				}
+			},
+			{
+				"Bassnectar": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Atlanta, Georgia, Estados Unidos."
+				}
+			},
+			{ "Zeds Dead": { "cancion mas escuchada": "", "nacionalidad": "Toronto, Canadá" } },
+			{
+				"Excision": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Kelowna, British Columbia, Canadá."
+				}
+			},
+			{
+				"Knife Party": { "cancion mas escuchada": "", "nacionalidad": "Perth, Australia" }
+			},
+			{
+				"Skream": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "West Wickham, Bromley, Londres, Reino Unido"
+				}
+			}
+		]
+	},
+	{
+		"id": "5",
+		"genero": "Drum and Bass",
+		"djs": [
+			{ "Andy C": { "cancion mas escuchada": "", "nacionalidad": "Walsall, Reino Unido" } },
+			{
+				"High Contrast": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Londres, Inglaterra."
+				}
+			},
+			{
+				"Friction": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Los Ángeles, California, Estados Unidos"
+				}
+			},
+			{
+				"Chase & Status": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "Londres, Reino Unido"
+				}
+			},
+			{
+				"DJ Marky": {
+					"cancion mas escuchada": "",
+					"nacionalidad": "São Paulo, Estado de São Paulo, Brasil"
+				}
+			},
+			{
+				"Dillinja": { "cancion mas escuchada": "", "nacionalidad": "Londres, Inglaterra." }
+			}
+		]
+	}
+]
