@@ -1,241 +1,240 @@
 [
 	{
-		"id": "1",
+		"id": 1,
 		"genero": "house",
 		"djs": [
 			{
 				"Daft Punk": {
 					"cancion mas escuchada": "one more time",
 					"nacionalidad": "París, Francia",
-					"tomorroland" : true
-				
+					"tomorroland": true
 				}
 			},
 			{
 				"Axwell Λ Ingrosso": {
 					"cancion mas escuchada": "more than you know",
 					"nacionalidad": "suecia",
-					"tomorroland" : true
+					"tomorroland": true
 				}
 			},
 			{
 				"Calvin Harris": {
 					"cancion mas escuchada": "Summer",
 					"nacionalidad": "Dumfries, Reino Unido",
-					"tomorroland" : true
+					"tomorroland": true
 				}
 			},
 			{
 				"David Guetta": {
 					"cancion mas escuchada": "titanium",
 					"nacionalidad": "París, Francia",
-					"tomorroland" : true
+					"tomorroland": true
 				}
 			},
 			{
 				"Swedish House Mafia": {
 					"cancion mas escuchada": "Don't You Worry Child",
 					"nacionalidad": "Estocolmo, Suecia",
-					"tomorroland" : true
+					"tomorroland": true
 				}
 			},
 			{
 				"Robin Schulz": {
 					"cancion mas escuchada": "Sugar ",
 					"nacionalidad": "Osnabrück, Alemania",
-					"tomorroland" : true
+					"tomorroland": true
 				}
 			}
 		]
 	},
 	{
-		"id": "2",
+		"id": 2,
 		"genero": "techno",
 		"djs": [
 			{
 				"Carl Cox": {
 					"cancion mas escuchada": "Phoebus Apollo",
 					"nacionalidad": "Mánchester, Reino Unido",
-					"tomorroland" : false
+					"tomorroland": false
 				}
 			},
 			{
 				"Boris Brejcha": {
 					"cancion mas escuchada": "My Love",
 					"nacionalidad": "Ludwigshafen am Rhein, Alemania",
-					"tomorroland" :  true
+					"tomorroland": true
 				}
 			},
 			{
 				"Adam Beyer": {
 					"cancion mas escuchada": "Teach Me",
 					"nacionalidad": "Estocolmo, Suecia",
-					"tomorroland" : true
+					"tomorroland": true
 				}
 			},
 			{
 				"Amelie Lens": {
 					"cancion mas escuchada": "In Silence",
 					"nacionalidad": "Amberes, Bélgica",
-					"tomorroland" :  true
+					"tomorroland": true
 				}
 			},
 			{
-				"c": {
+				"Joseph Capriati": {
 					"cancion mas escuchada": "Fratello",
 					"nacionalidad": "Caserta, Italia",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Charlotte de Witte": {
 					"cancion mas escuchada": "Apollo - Original Mix",
 					"nacionalidad": " Gante, Bélgica",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			}
 		]
 	},
 	{
-		"id": "3",
+		"id": 3,
 		"genero": "trance",
 		"djs": [
 			{
 				"Armin van Buuren": {
 					"cancion mas escuchada": "This Is What It Feels Like",
 					"nacionalidad": "Leiden, Países Bajos",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Tiesto": {
 					"cancion mas escuchada": "Traffic Cops",
 					"nacionalidad": "Breda, Países Bajos",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Above & Beyond": {
 					"cancion mas escuchada": "Believer - Marsh's Guatape Remix",
 					"nacionalidad": "Londres, Reino Unido",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Paul Oakenfold": {
 					"cancion mas escuchada": "Amsterdam",
 					"nacionalidad": "Mile End, Londres, Reino Unido",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Paul van Dyk": {
 					"cancion mas escuchada": "Let Go",
 					"nacionalidad": "Eisenhüttenstadt, Alemania",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"ATB (André Tanneberger)": {
 					"cancion mas escuchada": "9 PM (Till I Come)",
 					"nacionalidad": "Freiberg, Alemania",
-					"tomorroland" :
+					"tomorroland": false
 				}
 			}
 		]
 	},
 	{
-		"id": "4",
+		"id": 4,
 		"genero": "Dubstep",
 		"djs": [
 			{
 				"Skrillex": {
 					"cancion mas escuchada": "Scary Monsters and Nice Sprites",
 					"nacionalidad": "Highland Park, Los Ángeles, California, Estados Unidos",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Bassnectar": {
 					"cancion mas escuchada": "Now (feat. Rye Rye)",
 					"nacionalidad": "Atlanta, Georgia, Estados Unidos.",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Zeds Dead": {
 					"cancion mas escuchada": "Ecstasy Of Soul",
 					"nacionalidad": "Toronto, Canadá",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Excision": {
 					"cancion mas escuchada": "Name Drop",
 					"nacionalidad": "Kelowna, British Columbia, Canadá.",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Knife Party": {
 					"cancion mas escuchada": "Bonfire",
 					"nacionalidad": "Perth, Australia",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Skream": {
 					"cancion mas escuchada": "Otto's Chant",
 					"nacionalidad": "West Wickham, Bromley, Londres, Reino Unido",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			}
 		]
 	},
 	{
-		"id": "5",
+		"id": 5,
 		"genero": "Drum and Bass",
 		"djs": [
 			{
 				"Andy C": {
 					"cancion mas escuchada": "Hearbeat Loud",
 					"nacionalidad": "Walsall, Reino Unido",
-					"tomorroland" :
+					"tomorroland": false
 				}
 			},
 			{
 				"High Contrast": {
 					"cancion mas escuchada": "Can't give you up",
 					"nacionalidad": "Londres, Inglaterra.",
-					"tomorroland" :
+					"tomorroland": false
 				}
 			},
 			{
 				"Friction": {
 					"cancion mas escuchada": "",
 					"nacionalidad": "Los Ángeles, California, Estados Unidos",
-					"tomorroland" :
+					"tomorroland": false
 				}
 			},
 			{
 				"Chase & Status": {
 					"cancion mas escuchada": "your love",
 					"nacionalidad": "Londres, Reino Unido",
-					"tomorroland" :
+					"tomorroland": false
 				}
 			},
 			{
 				"DJ Marky": {
 					"cancion mas escuchada": "LK feat. Stamina MC (Carol Carolina Bela)",
 					"nacionalidad": "São Paulo, Estado de São Paulo, Brasil",
-					"tomorroland" :
+					"tomorroland": true
 				}
 			},
 			{
 				"Dillinja": {
 					"cancion mas escuchada": "Twist Em Out (ft. Skibadee)",
 					"nacionalidad": "Londres, Inglaterra.",
-					"tomorroland" :
+					"tomorroland": false
 				}
 			}
 		]
