@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export function Card({ nombre, img }) {
+export function Card() {
 	const [data, setData] = useState(null);
 
 	useEffect(() => {
@@ -11,7 +11,7 @@ export function Card({ nombre, img }) {
 	}, []);
 	return (
 		<>
-			<div className='flex flex-wrap gap-5 p-5 items-center justify-center'>
+			<div className='flex flex-wrap gap-5 p-5 items-center justify-center pl-80'>
 				{data ? (
 					data.map((el) =>
 						el.djs.map((data) => (

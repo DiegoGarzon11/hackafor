@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function Aside() {
+export  function Aside() {
 	const [genero, setGenero] = useState([]);
 
 	useEffect(() => {
@@ -11,7 +11,7 @@ export default function Aside() {
    
 
 	return (
-		<aside className='bg-slate-700 max-w-xs h-screen'>
+		<aside className='bg-slate-700 w-60 h-screen fixed '>
 			<div className='h-max'>
             {genero ? genero.map((e)=> <p className='text-slate-100 ' key={e.genero}>{e.genero}</p>) : ''}
          </div>
