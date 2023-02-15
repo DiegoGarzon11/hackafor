@@ -6,42 +6,42 @@
 			{
 				"name": "Daft Punk",
 				"imagen": "../../public/images/Daft-Punk.jpg",
-				"cancion mas escuchada": "one more time",
+				"cancionMasEscuchada": "one more time",
 				"nacionalidad": "París, Francia",
 				"tomorroland": true
 			},
 			{
 				"name": "Axwell Λ Ingrosso",
 				"imagen": "../../public/images/axwell-ingrosso.jpg",
-				"cancion mas escuchada": "more than you know",
+				"cancionMasEscuchada": "more than you know",
 				"nacionalidad": "suecia",
 				"tomorroland": true
 			},
 			{
 				"name": "Calvin Harris",
 				"imagen": "../../public/images/calvin-harris.jpg",
-				"cancion mas escuchada": "Summer",
+				"cancionMasEscuchada": "Summer",
 				"nacionalidad": "Dumfries, Reino Unido",
 				"tomorroland": true
 			},
 			{
 				"name": "David Guetta",
 				"imagen": "../../public/images/david-guetta.jpg",
-				"cancion mas escuchada": "titanium",
+				"cancionMasEscuchada": "titanium",
 				"nacionalidad": "París, Francia",
 				"tomorroland": true
 			},
 			{
 				"name": "Swedish House Mafia",
 				"imagen": "../../public/images/Swedish-House-Mafia.jpg",
-				"cancion mas escuchada": "Don't You Worry Child",
+				"cancionMasEscuchada": "Don't You Worry Child",
 				"nacionalidad": "Estocolmo, Suecia",
 				"tomorroland": true
 			},
 			{
 				"name": "Robin Schulz",
 				"imagen": "../../public/images/Robin-Schulz.jpg",
-				"cancion mas escuchada": "Sugar ",
+				"cancionMasEscuchada": "Sugar ",
 				"nacionalidad": "Osnabrück, Alemania",
 				"tomorroland": true
 			}
@@ -54,42 +54,42 @@
 			{
 				"name": "Carl Cox",
 				"imagen": "../../public/images/Carl-Cox.jpg",
-				"cancion mas escuchada": "Phoebus Apollo",
+				"cancionMasEscuchada": "Phoebus Apollo",
 				"nacionalidad": "Mánchester, Reino Unido",
 				"tomorroland": false
 			},
 			{
 				"name": "Boris Brejcha",
 				"imagen": "../../public/images/Boris-Brejcha.jpg",
-				"cancion mas escuchada": "My Love",
+				"cancionMasEscuchada": "My Love",
 				"nacionalidad": "Ludwigshafen am Rhein, Alemania",
 				"tomorroland": true
 			},
 			{
 				"name": "Adam Beyer",
 				"imagen": "../../public/images/Adam-Beyer.jpg",
-				"cancion mas escuchada": "Teach Me",
+				"cancionMasEscuchada": "Teach Me",
 				"nacionalidad": "Estocolmo, Suecia",
 				"tomorroland": true
 			},
 			{
 				"name": "Amelie Lens",
 				"imagen": "../../public/images/Amelie-Lens.jpg",
-				"cancion mas escuchada": "In Silence",
+				"cancionMasEscuchada": "In Silence",
 				"nacionalidad": "Amberes, Bélgica",
 				"tomorroland": true
 			},
 			{
 				"name": "Joseph Capriati",
 				"imagen": "../../public/images/Joseph-Capriati.jpg",
-				"cancion mas escuchada": "Fratello",
+				"cancionMasEscuchada": "Fratello",
 				"nacionalidad": "Caserta, Italia",
 				"tomorroland": true
 			},
 			{
 				"name": "Charlotte de Witte",
 				"imagen": "../../public/images/Charlotte-de-Witte.jpg",
-				"cancion mas escuchada": "Apollo - Original Mix",
+				"cancionMasEscuchada": "Apollo - Original Mix",
 				"nacionalidad": " Gante, Bélgica",
 				"tomorroland": true
 			}
@@ -102,42 +102,42 @@
 			{
 				"name": "Armin van Buuren",
 				"imagen": "../../public/images/Armin-van-Buuren.jpg",
-				"cancion mas escuchada": "This Is What It Feels Like",
+				"cancionMasEscuchada": "This Is What It Feels Like",
 				"nacionalidad": "Leiden, Países Bajos",
 				"tomorroland": true
 			},
 			{
 				"name": "Tiesto",
 				"imagen": "../../public/images/Tiesto.jpg",
-				"cancion mas escuchada": "Traffic Cops",
+				"cancionMasEscuchada": "Traffic Cops",
 				"nacionalidad": "Breda, Países Bajos",
 				"tomorroland": true
 			},
 			{
 				"name": "Above & Beyond",
-				"imagen": "../../public/images/Above-&-Beyond.jpg",
-				"cancion mas escuchada": "Believer - Marsh's Guatape Remix",
+				"imagen": "../../public/images/above.jpg",
+				"cancionMasEscuchada": "Believer - Marsh's Guatape Remix",
 				"nacionalidad": "Londres, Reino Unido",
 				"tomorroland": true
 			},
 			{
 				"name": "Paul Oakenfold",
 				"imagen": "../../public/images/Paul-Oakenfold.jpg",
-				"cancion mas escuchada": "Amsterdam",
+				"cancionMasEscuchada": "Amsterdam",
 				"nacionalidad": "Mile End, Londres, Reino Unido",
 				"tomorroland": true
 			},
 			{
 				"name": "Paul van Dyk",
 				"imagen": "../../public/images/Paul-van-Dyk.jpg",
-				"cancion mas escuchada": "Let Go",
+				"cancionMasEscuchada": "Let Go",
 				"nacionalidad": "Eisenhüttenstadt, Alemania",
 				"tomorroland": true
 			},
 			{
 				"name": "ATB (André Tanneberger)",
 				"imagen": "../../public/images/ATB.jpg",
-				"cancion mas escuchada": "9 PM (Till I Come)",
+				"cancionMasEscuchada": "9 PM (Till I Come)",
 				"nacionalidad": "Freiberg, Alemania",
 				"tomorroland": false
 			}
@@ -150,42 +150,42 @@
 			{
 				"name": "Skrillex",
 				"imagen": "../../public/images/Skrillex.jpg",
-				"cancion mas escuchada": "Scary Monsters and Nice Sprites",
+				"cancionMasEscuchada": "Scary Monsters and Nice Sprites",
 				"nacionalidad": "Highland Park, Los Ángeles, California, Estados Unidos",
 				"tomorroland": true
 			},
 			{
 				"name": "Bassnectar",
 				"imagen": "../../public/images/Bassnectar.jpg",
-				"cancion mas escuchada": "Now (feat. Rye Rye)",
+				"cancionMasEscuchada": "Now (feat. Rye Rye)",
 				"nacionalidad": "Atlanta, Georgia, Estados Unidos.",
 				"tomorroland": true
 			},
 			{
 				"name": "Zeds Dead",
 				"imagen": "../../public/images/Zeds-Dead.jpg",
-				"cancion mas escuchada": "Ecstasy Of Soul",
+				"cancionMasEscuchada": "Ecstasy Of Soul",
 				"nacionalidad": "Toronto, Canadá",
 				"tomorroland": true
 			},
 			{
 				"name": "Excision",
 				"imagen": "../../public/images/Excision.jpg",
-				"cancion mas escuchada": "Name Drop",
+				"cancionMasEscuchada": "Name Drop",
 				"nacionalidad": "Kelowna, British Columbia, Canadá.",
 				"tomorroland": true
 			},
 			{
 				"name": "Knife Party",
 				"imagen": "../../public/images/Knife-Party.jpg",
-				"cancion mas escuchada": "Bonfire",
+				"cancionMasEscuchada": "Bonfire",
 				"nacionalidad": "Perth, Australia",
 				"tomorroland": true
 			},
 			{
 				"name": "Skream",
 				"imagen": "../../public/images/Skream.jpg",
-				"cancion mas escuchada": "Otto's Chant",
+				"cancionMasEscuchada": "Otto's Chant",
 				"nacionalidad": "West Wickham, Bromley, Londres, Reino Unido",
 				"tomorroland": true
 			}
@@ -198,42 +198,42 @@
 			{
 				"name": "Andy C",
 				"imagen": "../../public/images/Andy-C.jpg",
-				"cancion mas escuchada": "Hearbeat Loud",
+				"cancionMasEscuchada": "Hearbeat Loud",
 				"nacionalidad": "Walsall, Reino Unido",
 				"tomorroland": false
 			},
 			{
 				"name": "High Contrast",
 				"imagen": "../../public/images/High-Contrast.jpg",
-				"cancion mas escuchada": "Can't give you up",
+				"cancionMasEscuchada": "Can't give you up",
 				"nacionalidad": "Londres, Inglaterra.",
 				"tomorroland": false
 			},
 			{
 				"name": "Friction",
 				"imagen": "../../public/images/Friction.jpg",
-				"cancion mas escuchada": "",
+				"cancionMasEscuchada": "",
 				"nacionalidad": "Los Ángeles, California, Estados Unidos",
 				"tomorroland": false
 			},
 			{
 				"name": "Chase & Status",
 				"imagen": "../../public/images/Chase-Status.jpg",
-				"cancion mas escuchada": "your love",
+				"cancionMasEscuchada": "your love",
 				"nacionalidad": "Londres, Reino Unido",
 				"tomorroland": false
 			},
 			{
 				"name": "DJ Marky",
 				"imagen": "../../public/images/DJ-Marky.jpg",
-				"cancion mas escuchada": "LK feat. Stamina MC (Carol Carolina Bela)",
+				"cancionMasEscuchada": "LK feat. Stamina MC (Carol Carolina Bela)",
 				"nacionalidad": "São Paulo, Estado de São Paulo, Brasil",
 				"tomorroland": true
 			},
 			{
 				"name": "Dillinja",
 				"imagen": "../../public/images/Dillinja.jpg",
-				"cancion mas escuchada": "Twist Em Out (ft. Skibadee)",
+				"cancionMasEscuchada": "Twist Em Out (ft. Skibadee)",
 				"nacionalidad": "Londres, Inglaterra.",
 				"tomorroland": false
 			}
