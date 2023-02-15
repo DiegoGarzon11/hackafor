@@ -4,8 +4,8 @@ import { Aside } from './components/Aside';
 function App() {
 	return (
 		<>
-		<Aside/>
-		<Card/>
+			<Aside />
+			<Card />
 		</>
 	);
 }
