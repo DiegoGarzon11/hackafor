@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export function Buscador(props) {
 	const [query, setQuery] = useState('');
@@ -10,8 +10,8 @@ export function Buscador(props) {
 
 	return (
 		<form
-			onSubmit={handleSubmit}
-			className='flex flex-wrap gap-8 p-5 items-center justify-center pl-80'>
+			className='flex flex-wrap gap-8 p-5 items-center justify-center pl-80'
+			onSubmit={handleSubmit}>
 			<div className='flex items-center border-b border-b-2 border-teal-500 py-2'>
 				<input
 					className='appearance-none bg-transparent border-none w-full text-lg text-white mr-3 py-1 px-2 leading-tight focus:outline-none'

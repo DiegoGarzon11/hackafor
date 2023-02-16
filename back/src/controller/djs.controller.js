@@ -3,11 +3,15 @@ const controller = {
 	todos: (req, res) => {
 		res.json(djs);
 	},
+	buscador: (req, res) => {
+		const filtrados = djs.map((dj) =>
+			dj.djs.filter((el) => el.name.toLowerCase().includes(req.params.name.toLowerCase()))
+		);
+		res.json(filtrados);
+	},
 	house: (req, res) => {
 		for (const i of djs) {
-			if (i.genero === 'house') {
-				res.json(i.djs);
-			}
+			console.log(i.id);
 		}
 	},
 	techno: (req, res) => {

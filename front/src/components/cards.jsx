@@ -2,41 +2,61 @@ import React, { useState, useEffect } from 'react';
 import { Buscador } from './buscador';
 
 export function Card({ results }) {
-	const [data, setData] = useState(null);
+	const [data, setData] = useState();
+	const [query, setQuery] = useState('');
 
 	useEffect(() => {
-		fetch('http://localhost:3000/djs')
+		const url = `http://localhost:3000/djs/`;
+		fetch(url)
 			.then((response) => response.json())
-			.then((datos) => setData(datos))
+			.then((datos) => {
+				setData(datos);
+			})
 			.catch((error) => console.error(error));
-	}, []);
+	}, [query]);
+
+	const handleSearch = (query) => {
+		setQuery(query);
+	};
 	return (
 		<>
 			<Buscador></Buscador>
-			<div className='flex flex-wrap gap-8 p-5 items-center justify-center pl-80'>
+
+			<main className='flex gap-5 flex-wrap pl-80 w-full justify-center py-5'>
 				{data ? (
-					data.map((el) =>
-						el.djs.map((data) => (
-							<div
-								className='w-96 h-[450px]  shadow-black shadow-md flex flex-col justify-start bg-zinc-800 text-white'
-								key={data.id}>
-								<p className='px-5 font-semibold text-2xl '>{data.name}</p>
-								<img src={data.imagen} alt='' className='h-60 bg-cover p-1' />
-								<div className='flex flex-col gap-2 px-5 text-lg'>
-									<p>Su nacionalidad es: {data.nacionalidad}</p>
-									<p>Su cancion mas escuchada es: {data.cancionMasEscuchada}</p>
-									<p>
-										¿Ha asistido a tomorroland? -{' '}
-										{data.tomorroland === true ? 'Si' : 'No'}
-									</p>
-								</div>
-							</div>
-						))
-					)
+					data.map((e) => (
+						<div className=' bg-zinc-900 text-white flex shadow-black shadow-lg rounded-lg flex-col items-center  w-[400px]'>
+							<p className='font-semibold text-lg p-3'>{e.name}</p>
+							<img src={e.info.imagen} alt='' className='w-full h-80 bg-cover ' />
+							<ul className='flex flex-col gap-2 px-5 py-5 text-lg'>
+								<li>
+									<span className='font-semibold'>Genero</span> : {e.info.genero}
+								</li>
+								<li>
+									{' '}
+									<span className='font-semibold'>Nacionalidad : </span>
+									{e.info.nacionalidad}
+								</li>
+								<li>
+									{' '}
+									<span className='font-semibold'>
+										{' '}
+										Cancion mas escuchada{' '}
+									</span> : {e.info.cancionMasEscuchada}
+								</li>
+								<li>
+									<span className='font-semibold'>
+										¿Ha participado en algun tomorroland?
+									</span>{' '}
+									{e.info.tomorroland === true ? 'Si' : ' No'}
+								</li>
+							</ul>
+						</div>
+					))
 				) : (
-					<p>Cargando...</p>
+					<p>cargando</p>
 				)}
-			</div>
+			</main>
 		</>
 	);
 }
