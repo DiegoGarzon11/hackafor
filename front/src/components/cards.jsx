@@ -22,12 +22,12 @@ export function Card({ results }) {
 		<>
 			<Buscador></Buscador>
 
-			<main className='flex gap-5 flex-wrap pl-80 w-full justify-center py-5'>
+			<main className='flex gap-5 flex-wrap pl-72  justify-center py-5'>
 				{data ? (
 					data.map((e) => (
-						<div className=' bg-zinc-900 text-white flex shadow-black shadow-lg rounded-lg flex-col items-center  w-[400px]'>
+						<div className=' bg-zinc-900 text-white flex shadow-black shadow-lg rounded-lg flex-col items-center  w-80 h-auto'>
 							<p className='font-semibold text-lg p-3'>{e.name}</p>
-							<img src={e.info.imagen} alt='' className='w-full h-80 bg-cover ' />
+							<img src={e.info.imagen} alt='' className='w-full h-56 bg-cover ' />
 							<ul className='flex flex-col gap-2 px-5 py-5 text-lg'>
 								<li>
 									<span className='font-semibold'>Genero</span> : {e.info.genero}
