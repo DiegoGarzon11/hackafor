@@ -12,7 +12,7 @@ export function Buscador(props) {
 		<form
 			className='flex flex-wrap gap-8 p-5 items-center justify-center pl-80'
 			onSubmit={handleSubmit}>
-			<div className='flex items-center border-b border-b-2 border-teal-500 py-2'>
+			<div className='flex items-center border-b border-teal-500 py-2'>
 				<input
 					className='appearance-none bg-transparent border-none w-full text-lg text-white mr-3 py-1 px-2 leading-tight focus:outline-none'
 					placeholder='Search...'
