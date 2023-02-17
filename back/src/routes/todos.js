@@ -2,6 +2,7 @@ const { Router } = require('express');
 const controller = require('../controller/djs.controller');
 const route = Router();
 route.get('/djs', controller.todos);
+route.get('/djs/generos', controller.generos);
 route.get('/djs/:name', controller.buscador);
 
 route.get('/djs/house', controller.house);

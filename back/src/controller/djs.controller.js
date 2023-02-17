@@ -3,12 +3,23 @@ const controller = {
 	todos: (req, res) => {
 		res.json(djs);
 	},
+	generos: (req, res) => {
+		const generos = djs.reduce((acc, artista) => {
+			if (!acc.includes(artista.info.genero)) {
+				acc.push(artista.info.genero);
+			}
+			return acc;
+		}, []);
+
+		res.json(generos);
+	},
 	buscador: (req, res) => {
 		const filtrados = djs.map((dj) =>
 			dj.djs.filter((el) => el.name.toLowerCase().includes(req.params.name.toLowerCase()))
 		);
 		res.json(filtrados);
 	},
+
 	house: (req, res) => {
 		for (const i of djs) {
 			console.log(i.id);
