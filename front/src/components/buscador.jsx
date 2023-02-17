@@ -5,9 +5,9 @@ export function Buscador(props) {
 	const [resultados, setResultados] = useState([]);
 
 	const handleBuscarClick = (event) => {
+		console.log(event.target.value);
 		event.preventDefault();
-		setInputValue(event.target.value);
-		props.onSearch(event.target.value);
+
 		if (inputValue) {
 			fetch(`http://localhost:3000/djs/${inputValue}`)
 				.then((res) => res.json())
@@ -18,7 +18,7 @@ export function Buscador(props) {
 
 	return (
 		<form
-			className='flex flex-wrap gap-8 p-5 items-center justify-center pl-80'
+			className='flex flex-wrap gap-8 p-5 items-center justify-center '
 			onSubmit={handleBuscarClick}>
 			<div className='flex items-center border-b border-teal-500 py-2'>
 				<input

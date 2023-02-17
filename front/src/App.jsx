@@ -1,7 +1,7 @@
 import { Card } from './components/cards';
 import { Aside } from './components/Aside';
 import { useEffect, useState } from 'react';
-import { Buscador } from './components/Buscador';
+import { Buscador } from './components/buscador';
 
 function App() {
 	const [datos, setDatos] = useState([]);
@@ -15,23 +15,26 @@ function App() {
 
 	const cards = datos.map((e) => {
 		return (
-			<Card
-				key={e.id}
-				name={e.name}
-				image={e.info.imagen}
-				genero={e.info.genero}
-				nacionalidad={e.info.nacionalidad}
-				cancion={e.info.cancionMasEscuchada}
-				tomorrowland={e.info.tomorrowland}
-			/>
+			<>
+				<Card
+					key={e.id}
+					name={e.name}
+					image={e.info.imagen}
+					genero={e.info.genero}
+					nacionalidad={e.info.nacionalidad}
+					cancion={e.info.cancionMasEscuchada}
+					tomorrowland={e.info.tomorrowland}
+				/>
+			</>
 		);
 	});
 
 	return (
 		<>
 			<main>
-			<Aside />
-				<Buscador />
+				<Aside />
+
+				<Buscador onSearch={datos.map((e) => e.name)}></Buscador>
 				<section className='flex flex-wrap gap-5 pl-96'>{cards}</section>
 			</main>
 		</>
