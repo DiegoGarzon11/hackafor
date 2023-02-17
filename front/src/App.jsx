@@ -29,10 +29,10 @@ function App() {
 
 	return (
 		<>
-			<Aside />
 			<main>
+			<Aside />
 				<Buscador />
-				<section className='flex flex-wrap gap-5 pl-96 '>{cards}</section>
+				<section className='flex flex-wrap gap-5 pl-96'>{cards}</section>
 			</main>
 		</>
 	);
