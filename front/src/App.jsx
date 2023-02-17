@@ -1,4 +1,4 @@
-import { Card } from './components/Cards';
+import { Card } from './components/cards';
 import { Aside } from './components/Aside';
 import { useEffect, useState } from 'react';
 import { Buscador } from './components/Buscador';

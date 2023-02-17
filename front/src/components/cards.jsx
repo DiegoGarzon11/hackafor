@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 
 export function Card(props) {
-	const [query, setQuery] = useState('');
-
-	const handleSearch = (query) => {
-		setQuery(query);
-	};
 	return (
 		<>
 			<div className=' bg-zinc-900 text-white flex shadow-black shadow-lg rounded-lg flex-col items-center  w-80 h-auto'>
@@ -20,7 +15,8 @@ export function Card(props) {
 						{props.nacionalidad}
 					</li>
 					<li>
-						<span className='font-semibold'> Cancion mas escuchada </span> : {props.cancion}
+						<span className='font-semibold'> Cancion mas escuchada </span> :{' '}
+						{props.cancion}
 					</li>
 					<li>
 						<span className='font-semibold'>¿Ha participado en algun tomorroland?</span>
