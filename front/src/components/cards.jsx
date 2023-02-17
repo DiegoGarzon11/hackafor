@@ -10,7 +10,9 @@ export function Card({ results }) {
 		fetch(url)
 			.then((response) => response.json())
 			.then((datos) => {
-				setData(datos);
+				setTimeout(() => {
+					setData(datos);
+				}, 1000);
 			})
 			.catch((error) => console.error(error));
 	}, [query]);
