@@ -20,7 +20,7 @@ export function Card(props) {
 					</li>
 					<li>
 						<span className='font-semibold'>¿Ha participado en algun tomorroland?</span>
-						{props.tomorroland}
+						<span className='px-2'>{props.tomorrowland == 1 ? 'Si' : 'No'}</span>
 					</li>
 				</ul>
 			</div>

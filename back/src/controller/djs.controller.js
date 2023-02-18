@@ -1,57 +1,82 @@
-const djs = require('../database/djs.json');
+const db = require('../database/models');
+
 const controller = {
 	todos: (req, res) => {
-		res.json(djs);
+		db.djs.findAll().then((data) => {
+			res.json(data);
+		});
 	},
 	generos: (req, res) => {
-		const generos = djs.reduce((acc, artista) => {
-			if (!acc.includes(artista.info.genero)) {
-				acc.push(artista.info.genero);
-			}
-			return acc;
-		}, []);
-
-		res.json(generos);
+		db.generos.findAll().then((data) => {
+			res.json(data);
+		});
 	},
-	buscador: (req, res) => {
-		const filtrados = djs.map((dj) =>
-			dj.djs.filter((el) => el.name.toLowerCase().includes(req.params.name.toLowerCase()))
-		);
-		res.json(filtrados);
-	},
+	// buscador: (req, res) => {
+	// 	db.djs.findAll().then((dj) => {
+	// 		const filtrados = dj.filter((el) =>
+	// 			el.nombre.toLowerCase().includes(req.params.name.toLowerCase())
+	// 		);
+	// 		res.json(filtrados.map((dj) => dj.name));
+	// 	});
+	// },
 
 	house: (req, res) => {
-		for (const i of djs) {
-			console.log(i.id);
-		}
+		db.djs
+			.findAll({
+				where: {
+					generosId: 1,
+				},
+			})
+			.then((data) => {
+				res.json(data);
+			});
 	},
 	techno: (req, res) => {
-		for (const i of djs) {
-			if (i.genero === 'techno') {
-				res.json(i.djs);
-			}
-		}
+		db.djs
+			.findAll({
+				where: {
+					generosId: 2,
+				},
+			})
+			.then((data) => {
+				res.json(data);
+			});
 	},
 	trance: (req, res) => {
-		for (const i of djs) {
-			if (i.genero === 'trance') {
-				res.json(i.djs);
-			}
-		}
+		db.djs
+			.findAll({
+				where: {
+					generosId: 3,
+				},
+			})
+			.then((data) => {
+				res.json(data);
+			});
 	},
-	Dubstep: (req, res) => {
-		for (const i of djs) {
-			if (i.genero === 'Dubstep') {
-				res.json(i.djs);
-			}
-		}
+	dubstep: (req, res) => {
+		db.djs
+			.findAll({
+				where: {
+					generosId: 4,
+				},
+			})
+			.then((data) => {
+				res.json(data);
+			});
 	},
 	drum: (req, res) => {
-		for (const i of djs) {
-			if (i.genero === 'Drum and Bass') {
-				res.json(i.djs);
-			}
-		}
+		db.djs
+			.findAll({
+				where: {
+					generosId: 5,
+				},
+			})
+			.then((data) => {
+				res.json(data);
+			});
+	},
+	noFound: (req, res) => {
+		res.send('Pagina no encontrada');
 	},
 };
 module.exports = controller;

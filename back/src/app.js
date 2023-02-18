@@ -10,6 +10,7 @@ app.use((req, res, next) => {
 	next();
 });
 app.use('/', rutes);
+app.use('**', rutes);
 
 app.listen('3000', () => {
 	console.log('port on 3000');

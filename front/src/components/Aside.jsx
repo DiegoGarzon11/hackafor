@@ -4,7 +4,7 @@ export function Aside() {
 	const [genero, setGenero] = useState([]);
 
 	useEffect(() => {
-		fetch('http://localhost:3000/djs/generos')
+		fetch('http://localhost:3000/generos')
 			.then((res) => res.json())
 			.then((data) => setGenero(data));
 	}, []);
@@ -20,7 +20,7 @@ export function Aside() {
 							<button
 								className='text-slate-100 w-full  capitalize items-center h-24 transition duration-100 flex justify-center hover:bg-neutral-800 hover:scale-[1.1]'
 								key={e.id}>
-								{e}
+								{e.nombre}
 							</button>
 					  ))
 					: ''}
