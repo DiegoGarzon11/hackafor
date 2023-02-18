@@ -1,70 +1,16 @@
-import { Card } from './components/cards';
-import { Aside } from './components/Aside';
-import { useEffect, useState } from 'react';
-import { Buscador } from './components/buscador';
-import { obtenerDatos } from './components/Api';
+import { Routes, Route } from 'react-router-dom';
+import { House } from './components/pages/House';
+
 import './App.css';
+import Principal from './components/pages/Principal';
 
 function App() {
-	const [datos, setDatos] = useState([]);
-	const [isLoading, setIsLoading] = useState(true);
-
-	useEffect(() => {
-		obtenerDatos('djs').then((data) => {
-			setDatos(data);
-			setIsLoading(false);
-		});
-	}, []);
-
-	const cards = datos.map((e) => {
-		const validarGenero = () => {
-			switch (e.generosId) {
-				case '1':
-					return 'House';
-				case '2':
-					return 'Techno';
-				case '3':
-					return 'Trance';
-				case '4':
-					return 'Dubstep';
-				case '5':
-					return 'Drum and Bass';
-				default:
-					return 'No hemos encontrado su genero';
-			}
-		};
-
-		return (
-			<>
-				<Card
-					key={e.id}
-					name={e.nombre}
-					image={e.imagen}
-					genero={validarGenero()}
-					nacionalidad={e.nacionalidad}
-					cancion={e.cancion}
-					tomorrowland={e.tomorroland}
-				/>
-			</>
-		);
-	});
-
 	return (
 		<>
-			<Aside />
-			<main className='pl-60'>
-				<Buscador></Buscador>
-				<section className='flex flex-wrap gap-5 justify-center mt-28'>
-					{isLoading ? (
-						<div className=' flex justify-center'>
-							<div className='loader mt-52 border-t-teal-500'></div>
-						</div>
-					) : (
-						''
-					)}
-					{cards}
-				</section>
-			</main>
+			<Routes>
+				<Route path='/' exact element={<Principal />} />
+				<Route path='/house' exact element={<House />} />
+			</Routes>
 		</>
 	);
 }
