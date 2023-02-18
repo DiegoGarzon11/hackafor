@@ -12,7 +12,7 @@ function App() {
 	useEffect(() => {
 		obtenerDatos('djs').then((data) => {
 			setDatos(data);
-			setIsLoading(isLoading);
+			setIsLoading(false);
 		});
 	}, []);
 
