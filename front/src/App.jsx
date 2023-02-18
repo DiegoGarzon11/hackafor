@@ -37,10 +37,10 @@ function App() {
 		return (
 			<>
 				<Card
+					genero={validarGenero()}
 					key={e.id}
 					name={e.nombre}
 					image={e.imagen}
-					genero={validarGenero()}
 					nacionalidad={e.nacionalidad}
 					cancion={e.cancion}
 					tomorrowland={e.tomorroland}

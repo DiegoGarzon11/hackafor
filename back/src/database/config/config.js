@@ -1,11 +1,11 @@
 require('dotenv').config();
 const data = {
 	development: {
-		username: process.env.DB_USER,
-		password: process.env.DB_PASSWORD,
-		database: process.env.DB_DATABASE,
-		host: process.env.DB_HOST,
-		dialect: process.env.DB_DIALECT,
+		username: 'diegog11',
+		password: 'hackaforpass123',
+		database: 'diegog11_hackafor',
+		host: 'mysql-diegog11.alwaysdata.net',
+		dialect: 'mysql',
 	},
 	test: {
 		username: 'root',
@@ -17,7 +17,7 @@ const data = {
 	production: {
 		username: 'root',
 		password: null,
-		database: 'database_production',
+		database: 'database_production',	
 		host: '127.0.0.1',
 		dialect: 'mysql',
 	},
