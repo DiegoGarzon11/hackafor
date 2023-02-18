@@ -48,11 +48,10 @@ function App() {
 
 	return (
 		<>
-			<main>
-				<Aside />
-
+			<Aside />
+			<main className='pl-60'>
 				<Buscador onSearch={datos.map((e) => e.name)}></Buscador>
-				<section className='flex flex-wrap gap-5 pl-96'>{cards}</section>
+				<section className='flex flex-wrap gap-5 justify-center'>{cards}</section>
 			</main>
 		</>
 	);
