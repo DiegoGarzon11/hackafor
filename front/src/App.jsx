@@ -2,14 +2,21 @@ import { Card } from './components/cards';
 import { Aside } from './components/Aside';
 import { useEffect, useState } from 'react';
 import { Buscador } from './components/buscador';
+import './App.css';
 
 function App() {
 	const [datos, setDatos] = useState([]);
+	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
 		fetch('http://localhost:3000/djs')
 			.then((res) => res.json())
-			.then((data) => setDatos(data))
+			.then((data) => {
+				setTimeout(() => {
+					setDatos(data);
+					setIsLoading(false);
+				}, 1000);
+			})
 			.catch((error) => console.error(error));
 	}, []);
 
@@ -50,8 +57,17 @@ function App() {
 		<>
 			<Aside />
 			<main className='pl-60'>
-				<Buscador onSearch={datos.map((e) => e.name)}></Buscador>
-				<section className='flex flex-wrap gap-5 justify-center'>{cards}</section>
+				<Buscador></Buscador>
+				<section className='flex flex-wrap gap-5 justify-center mt-28'>
+					{isLoading ? (
+						<div className=' flex justify-center'>
+							<div className='loader mt-52 border-t-teal-500'></div>
+						</div>
+					) : (
+						''
+					)}
+					{cards}
+				</section>
 			</main>
 		</>
 	);

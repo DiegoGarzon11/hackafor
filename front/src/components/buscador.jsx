@@ -17,8 +17,8 @@ export function Buscador(props) {
 	};
 
 	return (
-		<form className='flex p-5 justify-center ' onSubmit={handleBuscarClick}>
-			<div className=' border-b border-teal-500 py-2'>
+		<form className='flex p-5 justify-center  ' onSubmit={handleBuscarClick}>
+			<div className=' border-b border-teal-500 py-2 mt-10'>
 				<input
 					className='bg-transparent text-lg text-white mr-3 py-1 px-2  focus:outline-none'
 					placeholder='Search...'
