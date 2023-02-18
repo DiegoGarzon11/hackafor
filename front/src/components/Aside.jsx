@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
+import { obtenerDatos } from './Api';
 
 export function Aside() {
 	const [genero, setGenero] = useState([]);
 
 	useEffect(() => {
-		fetch('http://localhost:3000/generos')
-			.then((res) => res.json())
-			.then((data) => setGenero(data));
+		obtenerDatos('generos').then((data) => setGenero(data));
 	}, []);
 
 	return (

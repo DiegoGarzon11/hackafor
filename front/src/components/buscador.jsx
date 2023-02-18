@@ -7,13 +7,6 @@ export function Buscador(props) {
 	const handleBuscarClick = (event) => {
 		console.log(event.target.value);
 		event.preventDefault();
-
-		if (inputValue) {
-			fetch(`http://localhost:3000/djs/${inputValue}`)
-				.then((res) => res.json())
-				.then((data) => setResultados(data))
-				.catch((error) => console.error(error));
-		}
 	};
 
 	return (

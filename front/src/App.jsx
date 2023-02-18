@@ -2,6 +2,7 @@ import { Card } from './components/cards';
 import { Aside } from './components/Aside';
 import { useEffect, useState } from 'react';
 import { Buscador } from './components/buscador';
+import { obtenerDatos } from './components/Api';
 import './App.css';
 
 function App() {
@@ -9,15 +10,10 @@ function App() {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		fetch('http://localhost:3000/djs')
-			.then((res) => res.json())
-			.then((data) => {
-				setTimeout(() => {
-					setDatos(data);
-					setIsLoading(false);
-				}, 1000);
-			})
-			.catch((error) => console.error(error));
+		obtenerDatos('djs').then((data) => {
+			setDatos(data);
+			setIsLoading(isLoading);
+		});
 	}, []);
 
 	const cards = datos.map((e) => {
