@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { obtenerDatos } from './Api';
 import { Link } from 'react-router-dom';
 
@@ -19,7 +18,7 @@ export function Aside() {
 				<Link
 					to='/'
 					className='flex justify-center transition duration-100 hover:bg-neutral-800  hover:scale-[1.1]'>
-					<button className='text-slate-100 capitalize items-center h-24 '>
+					<button className='text-slate-100 capitalize items-center h-24 focus:bg-neutral-800 w-screen '>
 						<span className='text-teal-300 '>Todos</span>
 					</button>
 				</Link>
@@ -28,11 +27,11 @@ export function Aside() {
 							<Link
 								key={e.id}
 								to={`${e.nombre}`}
-								className='flex justify-center  transition duration-100 hover:bg-neutral-800 hover:scale-[1.1]'>
+								className='flex justify-center  transition duration-100 hover:bg-neutral-800 hover:scale-[1.1]  '>
 								<button
-									className='text-slate-100 capitalize items-center h-24 transition duration-100 flex justify-center'
+									className='text-slate-100 capitalize items-center h-24 transition duration-100 flex justify-center focus:bg-neutral-800 w-screen'
 									key={e.id}>
-									<span className='text-teal-300 '>{e.nombre}</span>
+									<span className='text-teal-300 '>{e.nombre === 'Drum' ? 'Drum and Bass' : e.nombre }</span>
 								</button>
 							</Link>
 					  ))

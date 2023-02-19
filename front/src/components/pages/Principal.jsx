@@ -14,6 +14,7 @@ function Principal() {
 			setIsLoading(false);
 		});
 	}, []);
+	
 	function generoCorrespondiente(id) {
 		for (let i of datos) {
 			if (i.generosId && id == 1) {

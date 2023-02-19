@@ -11,14 +11,16 @@ const controller = {
 			res.json(data);
 		});
 	},
-	// buscador: (req, res) => {
-	// 	db.djs.findAll().then((dj) => {
-	// 		const filtrados = dj.filter((el) =>
-	// 			el.nombre.toLowerCase().includes(req.params.name.toLowerCase())
-	// 		);
-	// 		res.json(filtrados.map((dj) => dj.name));
-	// 	});
-	// },
+	buscador: (req, res) => {
+		db.djs.findAll().then((dj) => {
+			const filtrados = dj.filter((el) => {
+				return  el.nombre.toLowerCase().includes( (req.params.name).toLowerCase());
+			});
+			res.json(filtrados)
+
+			;
+		});
+	},
 
 	house: (req, res) => {
 		db.djs
