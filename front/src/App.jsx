@@ -11,14 +11,14 @@ import Principal from './components/pages/Principal';
 function App() {
 	return (
 		<>
-		<Aside />
+			<Aside />
 			<Routes>
 				<Route path='/' exact element={<Principal />} />
-				<Route path='/house' exact element={<House />} />
-				<Route path='/techno' exact element={<Techno />} />
+				<Route path='/house' element={<House />} />
+				<Route path='/techno' element={<Techno />} />
 				<Route path='/trance' exact element={<Trance />} />
-				<Route path='/dubstep' exact element={<Dubstep />} />
-				<Route path='/drum' exact element={<DrumAndBass />} />
+				<Route path='/dubstep' element={<Dubstep />} />
+				<Route path='/drum' element={<DrumAndBass />} />
 			</Routes>
 		</>
 	);
