@@ -12,9 +12,9 @@ export function House() {
 			setIsLoading(false);
 		});
 	}, []);
+
 	return (
 		<>
-
 			<main className='pl-60'>
 				<Buscador />
 				<section className='flex flex-wrap gap-5 justify-center mt-8'>

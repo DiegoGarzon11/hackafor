@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { obtenerDatos } from './Api';
 
 export function Aside() {
@@ -18,25 +19,22 @@ export function Aside() {
 					href=''
 					className='flex justify-center transition duration-100 hover:bg-neutral-800  hover:scale-[1.1]'>
 					<button className='text-slate-100 capitalize items-center h-24 '>
-						<span className='text-teal-300 '>
-							Todos
-						</span>
+						<span className='text-teal-300 '>Todos</span>
 					</button>
 				</a>
 				{genero
 					? genero.map((e) => (
-							<a
+							<Link
+								to='{e.genero}'
 								key={e.id}
 								href=''
-								className='flex justify-center  transition duration-100 hover:bg-neutral-800 hover:scale-[1.1]'>
+								className='flex justify-center  transition duration-100 hover:bg-neutral-800 hover:scale-[1.1] '>
 								<button
-									className='text-slate-100 capitalize items-center h-24 transition duration-100 flex justify-center  '
+									className='text-slate-100 capitalize items-center h-24 transition duration-100 flex justify-center'
 									key={e.id}>
-									<span className='text-teal-300 '>
-										{e.nombre}
-									</span>
+									<span className='text-teal-300 '>{e.nombre}</span>
 								</button>
-							</a>
+							</Link>
 					  ))
 					: ''}
 			</div>
