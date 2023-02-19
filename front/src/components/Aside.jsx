@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { obtenerDatos } from './Api';
+import { Link } from 'react-router-dom';
 
 export function Aside() {
 	const [genero, setGenero] = useState([]);
@@ -15,20 +16,19 @@ export function Aside() {
 				<img src='../../public/dj.svg' alt='' className='w-40' />
 			</div>
 			<div className='h-screen bg-zinc-900 text-2xl pt-8 font-serif flex flex-col  justify-start '>
-				<a
-					href=''
+				<Link
+					to='/'
 					className='flex justify-center transition duration-100 hover:bg-neutral-800  hover:scale-[1.1]'>
 					<button className='text-slate-100 capitalize items-center h-24 '>
 						<span className='text-teal-300 '>Todos</span>
 					</button>
-				</a>
+				</Link>
 				{genero
 					? genero.map((e) => (
 							<Link
-								to='{e.genero}'
 								key={e.id}
-								href=''
-								className='flex justify-center  transition duration-100 hover:bg-neutral-800 hover:scale-[1.1] '>
+								to={`${e.nombre}`}
+								className='flex justify-center  transition duration-100 hover:bg-neutral-800 hover:scale-[1.1]'>
 								<button
 									className='text-slate-100 capitalize items-center h-24 transition duration-100 flex justify-center'
 									key={e.id}>
