@@ -17,8 +17,10 @@ export function Trance() {
 	return (
 		<>
 			<main className='pl-60'>
-				<Buscador />
-				<section className='flex flex-wrap gap-5 justify-center mt-8'>
+				<header className='h-28 flex justify-center items-center'>
+					<h1 className='text-6xl text-teal-500 font-sans '>Trance</h1>
+				</header>
+				<section className='flex flex-wrap gap-5 justify-center '>
 					{isLoading ? (
 						<div className=' flex justify-center'>
 							<div className='loader mt-52 border-t-teal-500'></div>

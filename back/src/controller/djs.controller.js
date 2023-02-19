@@ -14,11 +14,9 @@ const controller = {
 	buscador: (req, res) => {
 		db.djs.findAll().then((dj) => {
 			const filtrados = dj.filter((el) => {
-				return  el.nombre.toLowerCase().includes( (req.params.name).toLowerCase());
+				return el.nombre.toLowerCase().includes(req.params.name.toLowerCase());
 			});
-			res.json(filtrados)
-
-			;
+			res.json(filtrados);
 		});
 	},
 

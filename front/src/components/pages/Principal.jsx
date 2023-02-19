@@ -5,7 +5,9 @@ import { obtenerDatos } from '../Api';
 import '../../App.css';
 
 function Principal() {
-	const [datos, setDatos] = useState('');
+	const [datos, setDatos] = useState([]);
+	const [result, setResult] = useState('');
+	const [valor, setValor] = useState('');
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
@@ -14,7 +16,12 @@ function Principal() {
 			setIsLoading(false);
 		});
 	}, []);
-	
+
+	function handleSearchResults(results, searchText) {
+		setResult(results);
+		setValor(searchText);
+	}
+
 	function generoCorrespondiente(id) {
 		for (let i of datos) {
 			if (i.generosId && id == 1) {
@@ -33,8 +40,11 @@ function Principal() {
 	return (
 		<>
 			<main className='pl-60'>
-				<Buscador></Buscador>
-				<section className='flex flex-wrap gap-5 justify-center mt-8'>
+				<Buscador resultados={result} onSearch={handleSearchResults}>
+					{' '}
+				</Buscador>
+
+				<section className='flex flex-wrap gap-8 justify-center  my-16'>
 					{isLoading ? (
 						<div className=' flex justify-center'>
 							<div className='loader mt-52 border-t-teal-500'></div>
@@ -42,8 +52,8 @@ function Principal() {
 					) : (
 						''
 					)}
-					{datos
-						? datos.map((dato) => (
+					{result
+						? result.map((dato) => (
 								<Card
 									key={dato.id}
 									nombre={dato.nombre}
@@ -54,7 +64,28 @@ function Principal() {
 									tomorrowland={dato.tomorroland}
 								/>
 						  ))
-						: ''}
+						: datos.map((dato) => (
+								<Card
+									key={dato.id}
+									nombre={dato.nombre}
+									cancion={dato.cancion}
+									genero={generoCorrespondiente(dato.generosId)}
+									imagen={dato.imagen}
+									nacionalidad={dato.nacionalidad}
+									tomorrowland={dato.tomorroland}
+								/>
+						  ))}
+					{result && result.length == 0 ? (
+						<div className='flex  items-center font-semibold text-xl'>
+							<p className='text-white'>
+								No hay resultados para la busqueda de :{' '}
+								<span className='text-teal-500'>"{valor}"</span> en nuestra base de
+								datos <span className='text-teal-500'>:(</span>
+							</p>
+						</div>
+					) : (
+						''
+					)}
 				</section>
 			</main>
 		</>

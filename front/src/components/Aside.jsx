@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { obtenerDatos } from './Api';
 import { Link } from 'react-router-dom';
-
+import '../App.css';
 export function Aside() {
 	const [genero, setGenero] = useState([]);
 
@@ -12,7 +12,12 @@ export function Aside() {
 	return (
 		<aside className='w-60 h-screen fixed '>
 			<div className='bg-zinc-900 flex justify-center'>
-				<img src='../../public/dj.svg' alt='' className='w-40' />
+				<img
+					src='../../public/dj.svg'
+					alt=''
+					className='w-40   cursor-pointer  dj '
+					style={{ filter: 'drop-shadow(white 2px 2px )' }}
+				/>
 			</div>
 			<div className='h-screen bg-zinc-900 text-2xl pt-8 font-serif flex flex-col  justify-start '>
 				<Link
@@ -31,7 +36,9 @@ export function Aside() {
 								<button
 									className='text-slate-100 capitalize items-center h-24 transition duration-100 flex justify-center focus:bg-neutral-800 w-screen'
 									key={e.id}>
-									<span className='text-teal-300 '>{e.nombre === 'Drum' ? 'Drum and Bass' : e.nombre }</span>
+									<span className='text-teal-300 '>
+										{e.nombre === 'Drum' ? 'Drum and Bass' : e.nombre}
+									</span>
 								</button>
 							</Link>
 					  ))

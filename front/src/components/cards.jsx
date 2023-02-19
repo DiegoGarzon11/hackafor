@@ -14,12 +14,13 @@ export function Card({ nombre, imagen, genero, nacionalidad, cancion, tomorrowla
 
 	return (
 		<>
-			<div className=' bg-zinc-900 text-white flex shadow-black shadow-lg rounded-lg flex-col items-center  w-80 h-auto'>
+			<div className=' bg-zinc-900 text-white flex shadow-black shadow-lg rounded-lg flex-col items-center w-80 h-[550px]'>
 				<p className='font-semibold text-lg p-3'>{nombre}</p>
 				<img src={imagen} alt='' className='w-72 h-56 object-fill rounded-sm' />
 				<ul className='flex flex-col gap-2 px-5 py-5 text-lg border-t border-t-teal-500 mt-3 text-start'>
 					<li>
-						<span className='font-semibold'>Genero :</span> {genero}
+						<span className='font-semibold'>Genero :</span>{' '}
+						{genero[0].toUpperCase() + genero.slice(1)}
 					</li>
 					<li>
 						<span className='font-semibold'>Nacionalidad :</span>
