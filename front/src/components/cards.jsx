@@ -7,7 +7,7 @@ export function Card({ nombre, imagen, genero, nacionalidad, cancion, tomorrowla
 
 	useEffect(() => {
 		obtenerDatos('djs').then((data) => {
-			console.log();
+			
 			setDatos(data);
 			setIsLoading(false);
 		});

@@ -1,10 +1,7 @@
 import { Card } from '../cards';
-import { Aside } from '../Aside';
 import { useEffect, useState } from 'react';
 import { Buscador } from '../buscador';
-import { Routes, Route } from 'react-router-dom';
 import { obtenerDatos } from '../Api';
-
 import '../../App.css';
 
 function Principal() {
@@ -13,7 +10,6 @@ function Principal() {
 
 	useEffect(() => {
 		obtenerDatos('djs').then((data) => {
-			console.log();
 			setDatos(data);
 			setIsLoading(false);
 		});
@@ -35,11 +31,9 @@ function Principal() {
 	}
 	return (
 		<>
-			<Aside />
-
 			<main className='pl-60'>
 				<Buscador></Buscador>
-				<section className='flex flex-wrap gap-5 justify-center mt-28'>
+				<section className='flex flex-wrap gap-5 justify-center mt-8'>
 					{isLoading ? (
 						<div className=' flex justify-center'>
 							<div className='loader mt-52 border-t-teal-500'></div>

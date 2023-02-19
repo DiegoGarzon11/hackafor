@@ -1,20 +1,22 @@
-import { useEffect, useState } from 'react';
 import { obtenerDatos } from '../Api';
-import { Card } from '../cards';
+import { useEffect, useState } from 'react';
 import { Buscador } from '../buscador';
-export function House() {
+import { Card } from '../cards';
+
+export function DrumAndBass() {
 	const [datos, setDatos] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		obtenerDatos('djs/house').then((data) => {
+		obtenerDatos('djs/drum').then((data) => {
 			setDatos(data);
 			setIsLoading(false);
 		});
 	}, []);
+
 	return (
 		<>
-
+		
 			<main className='pl-60'>
 				<Buscador />
 				<section className='flex flex-wrap gap-5 justify-center mt-8'>
@@ -31,7 +33,7 @@ export function House() {
 									key={dato.id}
 									nombre={dato.nombre}
 									cancion={dato.cancion}
-									genero={'House'}
+									genero={'Drum and Bass'}
 									imagen={dato.imagen}
 									nacionalidad={dato.nacionalidad}
 									tomorrowland={dato.tomorroland}
