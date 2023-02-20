@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { obtenerDatos } from './Api';
 
-export function Card({ nombre, imagen, genero, nacionalidad, cancion, tomorrowland }) {
+export function Card({ nombre, imagen, genero, nacionalidad, cancion, tomorroland }) {
 	const [datos, setDatos] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
 
@@ -33,7 +33,7 @@ export function Card({ nombre, imagen, genero, nacionalidad, cancion, tomorrowla
 						<span className='font-semibold text-white opacity-50'>
 							¿Ha participado en algun tomorroland? :
 						</span>
-						<span className='px-2'>{tomorrowland == 1 ? 'Si' : 'No'}</span>
+						<span className='px-2'>{tomorroland == 1 ? 'Si' : 'No'}</span>
 					</li>
 				</ul>
 			</div>
