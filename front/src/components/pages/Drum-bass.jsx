@@ -1,6 +1,5 @@
 import { obtenerDatos } from '../Api';
 import { useEffect, useState } from 'react';
-import { Buscador } from '../buscador';
 import { Card } from '../cards';
 
 export function DrumAndBass() {
@@ -17,9 +16,10 @@ export function DrumAndBass() {
 	return (
 		<>
 			<main className='pl-60'>
-				<header className='h-28 flex justify-center items-center'>
+				<header className='h-20 flex justify-center'>
 					<h1 className='text-6xl text-teal-500 font-sans '>Drum and Bass</h1>
 				</header>
+				<hr className='text-slate-400 w-full mb-6' />
 				<section className='flex flex-wrap gap-5 justify-center '>
 					{isLoading ? (
 						<div className=' flex justify-center'>
@@ -29,17 +29,7 @@ export function DrumAndBass() {
 						''
 					)}
 					{datos
-						? datos.map((dato) => (
-								<Card
-									key={dato.id}
-									nombre={dato.nombre}
-									cancion={dato.cancion}
-									genero={'Drum and Bass'}
-									imagen={dato.imagen}
-									nacionalidad={dato.nacionalidad}
-									tomorrowland={dato.tomorroland}
-								/>
-						  ))
+						? datos.map((dato) => <Card genero={'Drum and Bass'} key={dato.id} {...dato} />)
 						: ''}
 				</section>
 			</main>

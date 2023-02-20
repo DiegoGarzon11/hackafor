@@ -43,8 +43,7 @@ function Principal() {
 				<Buscador resultados={result} onSearch={handleSearchResults}>
 					{' '}
 				</Buscador>
-
-				<section className='flex flex-wrap gap-8 justify-center  my-16'>
+				<section className='flex flex-wrap gap-8 justify-center  my-8'>
 					{isLoading ? (
 						<div className=' flex justify-center'>
 							<div className='loader mt-52 border-t-teal-500'></div>
@@ -54,33 +53,17 @@ function Principal() {
 					)}
 					{result
 						? result.map((dato) => (
-								<Card
-									key={dato.id}
-									nombre={dato.nombre}
-									cancion={dato.cancion}
-									genero={generoCorrespondiente(dato.generosId)}
-									imagen={dato.imagen}
-									nacionalidad={dato.nacionalidad}
-									tomorrowland={dato.tomorroland}
-								/>
+								<Card key={dato.id} genero={generoCorrespondiente(dato.generosId)} {...dato} />
 						  ))
 						: datos.map((dato) => (
-								<Card
-									key={dato.id}
-									nombre={dato.nombre}
-									cancion={dato.cancion}
-									genero={generoCorrespondiente(dato.generosId)}
-									imagen={dato.imagen}
-									nacionalidad={dato.nacionalidad}
-									tomorrowland={dato.tomorroland}
-								/>
+								<Card genero={generoCorrespondiente(dato.generosId)} key={dato.id} {...dato} />
 						  ))}
 					{result && result.length == 0 ? (
 						<div className='flex  items-center font-semibold text-xl'>
 							<p className='text-white'>
 								No hay resultados para la busqueda de :{' '}
-								<span className='text-teal-500'>"{valor}"</span> en nuestra base de
-								datos <span className='text-teal-500'>:(</span>
+								<span className='text-teal-500'>"{valor}"</span> en nuestra base de datos{' '}
+								<span className='text-teal-500'>:(</span>
 							</p>
 						</div>
 					) : (

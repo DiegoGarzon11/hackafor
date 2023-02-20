@@ -16,7 +16,7 @@ export function Buscador({ resultados, onSearch, value }) {
 
 	return (
 		<div>
-			<form className='flex p-5 justify-center  ' onSubmit={handleSearchTextChange}>
+			<form className='flex p-5 justify-center h-28 ' onSubmit={handleSearchTextChange}>
 				<div className=' border-b border-teal-500 py-2 mt-6'>
 					<input
 						className='bg-transparent text-lg text-white mr-3 py-1 px-2  focus:outline-none'
