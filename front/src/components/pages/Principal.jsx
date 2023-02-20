@@ -9,10 +9,9 @@ function Principal() {
 	const [result, setResult] = useState('');
 	const [valor, setValor] = useState('');
 	const [isLoading, setIsLoading] = useState(true);
-	
+
 	useEffect(() => {
 		obtenerDatos('djs').then((data) => {
-	
 			setDatos(data);
 			setIsLoading(false);
 		});
@@ -57,7 +56,7 @@ function Principal() {
 								<Card key={dato.id} genero={generoCorrespondiente(dato.generosId)} {...dato} />
 						  ))
 						: datos.map((dato) => (
-								<Card genero={generoCorrespondiente(dato.generosId)} key={dato.id} tomorrowland= {dato} {...dato} />
+								<Card genero={generoCorrespondiente(dato.generosId)} key={dato.id} {...dato} />
 						  ))}
 					{result && result.length == 0 ? (
 						<div className='flex  items-center font-semibold text-xl'>
