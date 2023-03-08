@@ -40,8 +40,8 @@ export function Card({nombre, imagen, genero, nacionalidad, cancion, tomorroland
 					</ul>
 				</div>
 				<div className='flex justify-start w-full p-2'>
-					<span className='cursor-pointer'>
-						<HeartIcon fill={corazonLleno ? 'red' : '#262626'} onClick={handleClick} />
+					<span className='cursor-pointer hover:scale-110'>
+						<HeartIcon fill={corazonLleno ? 'red' : '#727272'} onClick={handleClick} />
 					</span>
 				</div>
 			</div>
