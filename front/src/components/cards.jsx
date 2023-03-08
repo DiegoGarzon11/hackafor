@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {HeartIcon} from './Icons';
 import {obtenerDatos} from './Api';
 
-export function Card({nombre, imagen, genero, nacionalidad, cancion, tomorrowland}) {
+export function Card({nombre, imagen, genero, nacionalidad, cancion, tomorroland}) {
 	const [datos, setDatos] = useState([]);
 
 	const [corazonLleno, setCorazonLleno] = useState(false);
@@ -35,7 +35,7 @@ export function Card({nombre, imagen, genero, nacionalidad, cancion, tomorrowlan
 						</li>
 						<li className='flex flex-col'>
 							<span className='font-semibold text-white opacity-50'>¿Ha participado en algun tomorroland?</span>
-							<span>{tomorrowland == 1 ? 'Si' : 'No'}</span>
+							<span>{tomorroland == 1 ? 'Si' : 'No'}</span>
 						</li>
 					</ul>
 				</div>
