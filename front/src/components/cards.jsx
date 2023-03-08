@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { HeartIcon } from './Icons';
-import { obtenerDatos } from './Api';
+import React, {useState, useEffect} from 'react';
+import {HeartIcon} from './Icons';
+import {obtenerDatos} from './Api';
 
-export function Card({ nombre, imagen, genero, nacionalidad, cancion, tomorrowland }) {
+export function Card({nombre, imagen, genero, nacionalidad, cancion, tomorrowland}) {
 	const [datos, setDatos] = useState([]);
 
 	const [corazonLleno, setCorazonLleno] = useState(false);
@@ -25,23 +25,16 @@ export function Card({ nombre, imagen, genero, nacionalidad, cancion, tomorrowla
 					<img src={imagen} alt='' className='w-full h-56 object-fill ' />
 					<ul className='flex flex-col gap-2 px-3 py-5 text-base  mt-3 text-start h-auto'>
 						<li className='flex flex-col'>
-							<span className='font-semibold text-white opacity-50'>Genero</span>{' '}
-							{genero[0].toUpperCase() + genero.slice(1)}
+							<span className='font-semibold text-white opacity-50'>Genero</span> {genero[0].toUpperCase() + genero.slice(1)}
 						</li>
 						<li className='flex flex-col'>
-							<span className='font-semibold text-white opacity-50'>Nacionalidad</span>{' '}
-							{nacionalidad}
+							<span className='font-semibold text-white opacity-50'>Nacionalidad</span> {nacionalidad}
 						</li>
 						<li className='flex flex-col'>
-							<span className='font-semibold text-white opacity-50'>
-								Cancion mas escuchada
-							</span>{' '}
-							{cancion}
+							<span className='font-semibold text-white opacity-50'>Cancion mas escuchada</span> {cancion}
 						</li>
 						<li className='flex flex-col'>
-							<span className='font-semibold text-white opacity-50'>
-								¿Ha participado en algun tomorroland?
-							</span>
+							<span className='font-semibold text-white opacity-50'>¿Ha participado en algun tomorroland?</span>
 							<span>{tomorrowland == 1 ? 'Si' : 'No'}</span>
 						</li>
 					</ul>
